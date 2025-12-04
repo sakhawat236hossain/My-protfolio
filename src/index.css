@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* index.css */
+body {
+  @apply w-full min-h-screen;
+  background: linear-gradient(120deg, #e8a6ff, #ffb38a);
+}
