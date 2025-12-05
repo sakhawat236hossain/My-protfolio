@@ -18,7 +18,6 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full z-50 bg-gradient-to-r from-purple-700 via-pink-600 to-red-500 shadow-lg">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center h-16">
-
         {/* Logo */}
         <div className="text-2xl md:text-3xl font-bold text-white cursor-pointer drop-shadow-lg">
           Sakhawat
@@ -44,12 +43,19 @@ const Navbar = () => {
 
           {/* Resume Button */}
           <li>
-            <a
-              href="#"
-              className="ml-4 px-4 py-2 bg-yellow-300 text-purple-700 font-semibold rounded-full shadow-lg hover:bg-yellow-400 hover:scale-105 transform transition-all duration-300"
+            <button
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1nBhvFJIx4MWXQVINOtaFF6L6zTYAkt9P/view?usp=drive_link",
+                  "_blank"
+                )
+              }
+              className="px-6 py-2 bg-yellow-300 text-purple-700 font-semibold 
+               rounded-full shadow-lg hover:bg-yellow-400 hover:scale-105 
+               transition-all duration-300"
             >
               Resume
-            </a>
+            </button>
           </li>
         </ul>
 

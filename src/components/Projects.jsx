@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 
 const projectsData = [
   {
-    title: "Tour & Travel Website: TourNest BD",
-    extraText: "Explore Bangladesh like never before!",
-    description: "To develop an online platform providing detailed information about tourism in Bangladesh, helping travelers explore destinations, plan trips easily, and experience local culture and activities.",
-    image: "/images/project1.png",
-    liveLink: "https://tour-nest-demo.com",
-    githubClient: "https://github.com/sakhawat236hossain/tournest-client",
-    githubServer: "https://github.com/sakhawat236hossain/tournest-server"
+    title: "Green Nest (Tree & Plant Service Website)",
+   
+    description: "A web application focused on tree plantation, plant services, and environmental awareness.",
+    image: "https://github.com/user-attachments/assets/c6adb38c-5398-43a5-b287-b68481cf80ee",
+    liveLink: "https://greennest-assigment-9.firebaseapp.com/",
+    githubClient: "https://github.com/sakhawat236hossain/Green-Nest-A9",
+    // githubServer: "https://github.com/sakhawat236hossain/tournest-server"
   },
   {
     title: "Hobby Related Website: HobbyHub",
-    extraText: "Connect and share hobbies with friends!",
+    
     description: "To build a platform that allows users to discover, join, and create hobby-based groups, fostering meaningful connections and vibrant communities around shared passions and interests.",
     image: "/images/project2.png",
     liveLink: "https://hobbyhub-demo.com",
@@ -21,50 +21,17 @@ const projectsData = [
   },
   {
     title: "Group-Study Related Website: FriendAssign",
-    extraText: "Make group study more productive!",
+  
     description: "Purpose: To create a collaborative online platform where friends can assign, complete, and evaluate each other’s work, making group study more engaging, organized, and productive.",
     image: "/images/project3.png",
     liveLink: "https://friendassign-demo.com",
     githubClient: "https://github.com/sakhawat236hossain/friendassign-client",
     githubServer: "https://github.com/sakhawat236hossain/friendassign-server"
   },
-  {
-    title: "Group-Study Related Website: FriendAssign",
-    extraText: "Make group study more productive!",
-    description: "Purpose: To create a collaborative online platform where friends can assign, complete, and evaluate each other’s work, making group study more engaging, organized, and productive.",
-    image: "/images/project3.png",
-    liveLink: "https://friendassign-demo.com",
-    githubClient: "https://github.com/sakhawat236hossain/friendassign-client",
-    githubServer: "https://github.com/sakhawat236hossain/friendassign-server"
-  },
-  {
-    title: "Group-Study Related Website: FriendAssign",
-    extraText: "Make group study more productive!",
-    description: "Purpose: To create a collaborative online platform where friends can assign, complete, and evaluate each other’s work, making group study more engaging, organized, and productive.",
-    image: "/images/project3.png",
-    liveLink: "https://friendassign-demo.com",
-    githubClient: "https://github.com/sakhawat236hossain/friendassign-client",
-    githubServer: "https://github.com/sakhawat236hossain/friendassign-server"
-  },
-  {
-    title: "Group-Study Related Website: FriendAssign",
-    extraText: "Make group study more productive!",
-    description: "Purpose: To create a collaborative online platform where friends can assign, complete, and evaluate each other’s work, making group study more engaging, organized, and productive.",
-    image: "/images/project3.png",
-    liveLink: "https://friendassign-demo.com",
-    githubClient: "https://github.com/sakhawat236hossain/friendassign-client",
-    githubServer: "https://github.com/sakhawat236hossain/friendassign-server"
-  },
-  {
-    title: "Group-Study Related Website: FriendAssign",
-    extraText: "Make group study more productive!",
-    description: "Purpose: To create a collaborative online platform where friends can assign, complete, and evaluate each other’s work, making group study more engaging, organized, and productive.",
-    image: "/images/project3.png",
-    liveLink: "https://friendassign-demo.com",
-    githubClient: "https://github.com/sakhawat236hossain/friendassign-client",
-    githubServer: "https://github.com/sakhawat236hossain/friendassign-server"
-  },
-  // You can add more projects here
+
+  
+ 
+  
 ];
 
 const Projects = () => {
@@ -90,7 +57,6 @@ const Projects = () => {
               <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
               <div className="p-6 text-left">
                 <h3 className="text-xl font-bold mb-1">{project.title}</h3>
-                <p className="text-blue-300 italic mb-2">{project.extraText}</p>
                 <p className="text-gray-300 mb-4">{project.description}</p>
                 <div className="flex gap-4 mb-4 flex-wrap">
                   <a
